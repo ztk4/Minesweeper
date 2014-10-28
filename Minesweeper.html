@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minesweeper</title>
+	<link rel="SHORTCUT ICON" href="f/mine.ico">
+	<link rel="stylesheet" type="text/css" href="f/style.css" />
+	<script src="f/jQuery Library.js" type="text/javascript"></script>
+	<script src="f/script.js" type="text/javascript"></script>
+</head>
+<body>
+	<img src="f/background.gif" id="background" />
+	<div id="popup">
+		<form id="setup">
+			<label class="gameLabel" >
+				<input type="radio" name="gameType" class="gameType" value="beginner" checked="checked"/>
+			Beginner:</label> 10x10 with 10 mines<br />
+			<label class="gameLabel" >
+				<input type="radio" name="gameType" class="gameType" value="intermediate" />
+			Intermediate:</label> 16x16 with 40 mines<br />
+			<label class="gameLabel" >
+				<input type="radio" name="gameType" class="gameType" value="advanced" />
+			Advanced:</label> 16x30 with 99 mines<br />
+			<label id="custom" class="gameLabel" >
+				<input type="radio" id="custom" name="gameType" class="gameType" value="custom" />
+			Custom:</label><br />
+		
+			<input type="text" name="height" id="height" value="9" size="2" maxlength="2" class="customForm" />
+				<label for="height" class="customForm" >Height (9-20): </label><br /><br />
+			<input type="text" name="width" id="width" value="9" size="2" maxlength="2" class="customForm" />
+				<label for="width"class="customForm" >Width (9-30): </label><br /><br />
+			<input type="text" name="numMines" id="numMines" value="9" size="3" maxlength="3" class="customForm" />
+				<label for="numMines"class="customForm" >Mines (9-590): </label><br />
+			<br />
+			<input type="button" value="Start Game!" id="start" />
+		</form>
+	</div>
+	<div id="game">
+		<div id="navBox">
+			<div id="face">
+				<div class="smile"></div>
+			</div>
+			<div id="timeLabel"></div>
+			<div id="timer">000</div>
+			<div id="flagCount"></div>
+			<div id="flagLabel"></div>
+		</div>
+		<div id="board">
+			
+		</div>
+	</div>
+</body>
+</html>

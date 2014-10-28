@@ -1,0 +1,316 @@
+html {
+	font-family: Courier New;
+}
+
+body {
+	/*background: url(background.gif) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+}
+
+#background {
+	filter: blur(1px);
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(1px);
+	-o-filter: blur(1px);
+	-ms-filter: blur(1px);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: -100;
+	top: 0;
+}
+
+#popup {
+	margin: auto;
+	margin-top: 15%;
+	display: block;
+	background-color: lightgrey;
+	border-style: outset;
+	border-color: grey;
+	border-width: 5px;
+	height: auto;
+	width: 500px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	font-family: Comic Sans;
+	box-shadow: 0 0 15px black;
+}
+
+.gameLabel {
+	font-weight: bold;
+}
+
+.customForm,  #custom{
+	float: right;
+}
+
+.customForm {
+	margin-right: 10px;
+}
+
+#custom {
+	margin-right: 80px;
+}
+
+#start {
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2F2727), to(#1a82f7));
+	background: -webkit-linear-gradient(top, #1a82f7, #2F2727);
+	background: -moz-linear-gradient(top, #1a82f7, #2F2727);
+	background: -ms-linear-gradient(top, #1a82f7, #2F2727);
+	background: -o-linear-gradient(top, #1a82f7, #2F2727);
+	color: white;
+	border-color: #1a50f7;
+	border-style: outset;
+	border-width: 3px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-bottom: 5px;
+	margin-left: 40%;
+	font-weight: bold;
+}
+
+#start:hover {
+	border-color: lightblue;
+}
+
+#start:active {
+	border-style: inset;
+	border-color: blue;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2A2222), to(#1a30d7));
+	background: -webkit-linear-gradient(top, #1a30d7, #2A2222);
+	background: -moz-linear-gradient(top, #1a30d7, #2A2222);
+	background: -ms-linear-gradient(top, #1a30d7, #2A2222);
+	background: -o-linear-gradient(top, #1a30d7, #2A2222);
+}
+
+#navBox {
+	margin-top: -5px;
+	background-color: lightgrey;
+	border-color: grey;
+	border-style: outset;
+	box-shadow: 0 0 15px black;
+}
+
+#face {
+	background-color: lightgrey;
+	height: 52px;
+	width: 52px;
+	border-style: outset;
+	border-color: grey;
+	border-width: 3px;
+	margin: 5px auto;
+}
+
+#face:hover {
+	border-color: darkgrey;
+}
+
+#face:active {
+	background-color: grey;
+	border-style: inset;
+}
+
+.smile {
+	height: 52px;
+	width: 52px;
+	background-image: url(smile.png);
+}
+
+.glasses {
+	height: 52px;
+	width: 52px;
+	background-image: url(glasses.png);
+}
+
+.dead {
+	height: 52px;
+	width: 52px;
+	background-image: url(dead.png);
+}
+
+#timeLabel {
+	height: 41px;
+	width: 41px;
+	display: inline-block;
+	margin-left: 15px;
+}
+
+#flagLabel {
+	height: 41px;
+	width: 41px;
+	display: inline-block;
+	float: right;
+}
+
+#flagCount, #timer{
+	margin-left: 5px;
+	border-color: grey;
+	border-width: 3px;
+	border-style: outset;
+	background-color: black;
+	color: red;
+	display: inline-block;
+	height: 25px;
+	width: auto;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 0 5px;
+	padding-bottom: 10px;
+	text-align: right;
+}
+
+#flagCount {
+	float: right;
+	margin-right: 15px;
+}
+
+.box {
+	height: 32px;
+	width: 32px;
+	float: left;
+	background-color: blue;
+	border-style: outset;
+	border-color: grey;
+	box-shadow: 0 0 15px black;
+}
+
+.un {
+	box-shadow: 0 0 15px black;
+}
+
+.mine {
+}
+
+.unMine {
+	float: left;
+	border-style: outset;
+	border-color: grey;
+	height: 32px;
+	width: 32px;
+	background-color: lightgrey;
+	background-image: url(mine.gif);
+	box-shadow: 0 0 15px black;
+}
+
+.redMine {
+	background-image: url(redMine.png);
+}
+
+.flagged {
+}
+
+.boxHover {
+	background-color: lightblue;
+}
+
+.question {
+	font-size: 32px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 0 0 1px blue;
+}
+
+.question:before {
+	content: "?";
+}
+
+.blank, .one, .two, .three, .four, .five, .six, .seven, .eight {
+	font-weight: bold;
+	background-color: lightgrey;
+	text-align: center;
+	font-size: 32px;
+	height: 32px;
+	width: 32px;
+	float: left;
+	border-style: inset;
+	border-color: grey;
+}
+
+.one:before {
+	color: blue;
+	content: "1";
+}
+
+.two:before {
+	color: green;
+	content: "2";
+}
+
+.three:before {
+	color: red;
+	content: "3";
+}
+
+.four:before {
+	color: purple;
+	content: "4";
+}
+
+.five:before {
+	color: maroon;
+	content: "5";
+}
+
+.six:before {
+	color: darkturquoise;
+	content: "6";
+}
+
+.seven:before {
+	color: black;
+	content: "7";
+}
+
+.eight:before {
+	color: darkgrey;
+	content: "8";
+}
+
+.wrong {
+	background-color: lightgrey;
+	height: 32px;
+	width: 32px;
+	float: left;
+	border-style: inset;
+	border-color: grey;
+	box-shadow: 0 0 15px black;
+}
+
+.xFlash {
+	animation: doubleFlash 1s linear;
+	-webkit-animation: doubleFlash 1s linear;
+	-o-animation: doubleFlash 1s linear;
+	-moz-animation: doubleFlash 1s linear;
+}
+
+@keyframes doubleFlash {
+	25% {background-image: url(crossOut.png);}
+	50% {background-image: none;}
+	75% {background-image: url(crossOut.png);}
+	100% {background-image: none;}
+}
+
+@-webkit-keyframes doubleFlash {
+	25% {background-image: url(crossOut.png);}
+	50% {background-image: none;}
+	75% {background-image: url(crossOut.png);}
+	100% {background-image: none;}
+}
+
+@-o-keyframes doubleFlash {
+	25% {background-image: url(crossOut.png);}
+	50% {background-image: none;}
+	75% {background-image: url(crossOut.png);}
+	100% {background-image: none;}
+}
+
+@-moz-keyframes doubleFlash {
+	25% {background-image: url(crossOut.png);}
+	50% {background-image: none;}
+	75% {background-image: url(crossOut.png);}
+	100% {background-image: none;}
+}
