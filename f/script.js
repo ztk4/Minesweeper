@@ -408,7 +408,7 @@ $(document).ready(function() {
 			$(this).removeClass('boxHover');
 		});
 		
-		$('.box').mousedown(function() {
+		$('.box').mousedown(function(event) {
 			
 			$('.un').dblclick(function() {
 				var num;
