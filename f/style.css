@@ -175,10 +175,12 @@ body {
 	border-style: outset;
 	border-color: grey;
 	box-shadow: 0 0 15px black;
+	cursor: pointer;
 }
 
 .un {
 	box-shadow: 0 0 15px black;
+	cursor: default;
 }
 
 .mine {
